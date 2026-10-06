@@ -1,0 +1,314 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    background: #f4f7fb;
+
+    color: #222;
+
+    min-height: 100vh;
+}
+
+
+/* HEADER */
+
+header {
+    background: #111827;
+
+    color: white;
+
+    padding: 45px 20px;
+
+    text-align: center;
+}
+
+header h1 {
+    font-size: 38px;
+
+    margin-bottom: 10px;
+}
+
+header p {
+    color: #d1d5db;
+
+    font-size: 16px;
+}
+
+
+/* MAIN */
+
+main {
+    width: 90%;
+
+    max-width: 900px;
+
+    margin: 40px auto;
+}
+
+
+/* QUOTE */
+
+.quote-section {
+    display: flex;
+
+    justify-content: center;
+}
+
+.quote-card {
+    width: 100%;
+
+    background: white;
+
+    border-radius: 18px;
+
+    padding: 45px;
+
+    text-align: center;
+
+    box-shadow:
+        0 10px 30px
+        rgba(0, 0, 0, 0.08);
+}
+
+.quote-symbol {
+    font-size: 80px;
+
+    line-height: 50px;
+
+    color: #6366f1;
+}
+
+.quote-text {
+    font-size: 25px;
+
+    line-height: 1.6;
+
+    margin: 25px 0 15px;
+}
+
+.quote-author {
+    font-size: 18px;
+
+    font-weight: bold;
+
+    margin-bottom: 12px;
+}
+
+.source {
+    font-size: 13px;
+
+    color: #777;
+
+    margin-bottom: 25px;
+}
+
+
+/* BUTTONS */
+
+.buttons {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 10px;
+
+    flex-wrap: wrap;
+}
+
+button {
+    border: none;
+
+    padding: 12px 18px;
+
+    border-radius: 8px;
+
+    cursor: pointer;
+
+    font-size: 14px;
+
+    font-weight: bold;
+
+    background: #111827;
+
+    color: white;
+
+    transition: 0.2s;
+}
+
+button:hover {
+    transform: translateY(-2px);
+
+    opacity: 0.9;
+}
+
+#favorite-btn {
+    background: #e11d48;
+}
+
+#copy-btn {
+    background: #059669;
+}
+
+#refresh-btn {
+    background: #4f46e5;
+}
+
+
+/* MESSAGE */
+
+.message {
+    margin-top: 20px;
+
+    font-weight: bold;
+
+    min-height: 20px;
+}
+
+
+/* FAVORITES */
+
+.favorites-section {
+    margin-top: 50px;
+}
+
+.favorites-heading {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin-bottom: 20px;
+}
+
+.favorites-heading h2 {
+    font-size: 28px;
+
+    margin-bottom: 5px;
+}
+
+.favorites-heading p {
+    color: #777;
+}
+
+
+#favorites-list {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 15px;
+}
+
+
+.favorite-card {
+    background: white;
+
+    padding: 25px;
+
+    border-radius: 14px;
+
+    box-shadow:
+        0 5px 15px
+        rgba(0, 0, 0, 0.06);
+}
+
+.favorite-quote {
+    font-size: 18px;
+
+    line-height: 1.6;
+
+    margin-bottom: 12px;
+}
+
+.favorite-author {
+    font-weight: bold;
+
+    margin-bottom: 15px;
+}
+
+.favorite-date {
+    color: #888;
+
+    font-size: 12px;
+
+    margin-bottom: 15px;
+}
+
+.favorite-actions {
+    display: flex;
+
+    gap: 8px;
+}
+
+.copy-favorite {
+    background: #059669;
+}
+
+.delete-favorite {
+    background: #dc2626;
+}
+
+.empty {
+    background: white;
+
+    padding: 30px;
+
+    border-radius: 12px;
+
+    text-align: center;
+
+    color: #777;
+}
+
+
+/* FOOTER */
+
+footer {
+    margin-top: 60px;
+
+    padding: 30px;
+
+    background: #111827;
+
+    color: #d1d5db;
+
+    text-align: center;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+
+    header h1 {
+        font-size: 30px;
+    }
+
+    .quote-card {
+        padding: 30px 20px;
+    }
+
+    .quote-text {
+        font-size: 20px;
+    }
+
+    .favorites-heading {
+        align-items: flex-start;
+
+        gap: 15px;
+    }
+
+    .favorites-heading h2 {
+        font-size: 22px;
+    }
+
+}

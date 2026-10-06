@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>QuoteVault - Random Quotes</title>
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+
+    <header>
+
+        <h1>✨ Quote-Vault ✨</h1>
+
+        <p>
+            Discover, Save & Share Inspiring Quotes.
+        </p>
+
+    </header>
+
+
+    <!-- ================= MAIN ================= -->
+
+    <main>
+
+        <!-- ========== CURRENT QUOTE ========== -->
+
+        <section class="quote-section">
+
+            <div class="quote-card">
+
+                <div class="quote-symbol">
+                    “
+                </div>
+
+
+                <!-- REQUIRED BY script.js -->
+
+                <p
+                    id="quote-text"
+                    class="quote-text"
+                >
+                    Loading quote...
+                </p>
+
+
+                <p
+                    id="quote-author"
+                    class="quote-author"
+                >
+                </p>
+
+
+                <p
+                    id="source"
+                    class="source"
+                >
+                </p>
+
+
+                <!-- BUTTONS -->
+
+                <div class="buttons">
+
+                    <button
+                        id="new-quote-btn"
+                    >
+                        🔄 New Quote
+                    </button>
+
+
+                    <button
+                        id="favorite-btn"
+                    >
+                        ❤️ Favorite
+                    </button>
+
+
+                    <button
+                        id="copy-btn"
+                    >
+                        📋 Copy
+                    </button>
+
+                </div>
+
+
+                <!-- MESSAGE -->
+
+                <p
+                    id="message"
+                    class="message"
+                >
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- ========== FAVORITES ========== -->
+
+        <section class="favorites-section">
+
+            <div class="favorites-heading">
+
+                <div>
+
+                    <h2>
+                        ❤️ Favorite Quotes
+                    </h2>
+
+                    <p>
+                        Your saved quote history
+                    </p>
+
+                </div>
+
+
+                <!-- REQUIRED BY script.js -->
+
+                <button
+                    id="refresh-btn"
+                >
+                    🔄 Refresh
+                </button>
+
+            </div>
+
+
+            <!-- REQUIRED BY script.js -->
+
+            <div
+                id="favorites-list"
+            >
+
+                <p class="empty">
+                    No favorite quotes yet.
+                </p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <p>
+            QuoteVault | Full-Stack API Integration Project
+        </p>
+
+    </footer>
+
+
+    <!-- JAVASCRIPT -->
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
